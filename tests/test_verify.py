@@ -18,7 +18,7 @@ ISS = (
 )
 JWKS_URI = (
     'https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/'
-    'b2c_1_jhh_sign_in/discovery/v2.0/keys'
+    'B2C_1_app_sign_in/discovery/v2.0/keys'
 )
 
 
@@ -104,7 +104,7 @@ def test_returns_payload_if_token_successfully_verified(
             'given_name': 'Richard',
             'family_name': 'Exp Admin',
             'emails': ['bob@example.com'],
-            'tfp': 'B2C_1_jhh_sign_in',
+            'tfp': 'B2C_1_app_sign_in',
         },
     )
 
@@ -127,7 +127,7 @@ def test_returns_payload_if_token_successfully_verified(
         'given_name': 'Richard',
         'family_name': 'Exp Admin',
         'emails': [mocker.ANY],
-        'tfp': 'B2C_1_jhh_sign_in',
+        'tfp': 'B2C_1_app_sign_in',
     }
 
 

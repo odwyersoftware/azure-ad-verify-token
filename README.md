@@ -58,7 +58,7 @@ It will look something like:
 
 Now replace `<policy-name>` with the name of your User Flow from earlier
 
-`https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/B2C_1_jhh_sign_in/v2.0/.well-known/openid-configuration`
+`https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/B2C_1_app_sign_in/v2.0/.well-known/openid-configuration`
 
 Now visit that URL in your web browser.
 
@@ -71,7 +71,7 @@ from azure_ad_verify_token import verify_jwt
 
 azure_ad_app_id = 'b74cd13f-8f79-4c98-b748-7789ecb1111d5'
 azure_ad_issuer = 'https://exampletenant.b2clogin.com/0867afa-24e7-40e9-9d27-74bb598zzzzc/v2.0/'
-azure_ad_jwks_uri = 'https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/b2c_1_jhh_sign_in/discovery/v2.0/keys'
+azure_ad_jwks_uri = 'https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/B2C_1_app_sign_in/discovery/v2.0/keys'
 payload = verify_jwt(
     token='<AZURE_JWT_TO_VERIFY_HERE>',
     valid_audiences=[azure_ad_app_id],
@@ -90,7 +90,7 @@ print(payload)
  'iss': 'https://exampletenant.b2clogin.com/90867afa-24e7-40e9-9d27-74bb598zzzzc/v2.0/',
  'nbf': 1591800638,
  'sub': 'e07bbc53-b812-4572-9edc-4b5d4ac88447',
- 'tfp': 'B2C_1_jhh_sign_in',
+ 'tfp': 'B2C_1_app_sign_in',
  'ver': '1.0'}
 ```
 
