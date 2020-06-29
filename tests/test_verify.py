@@ -12,7 +12,10 @@ from azure_ad_verify_token import (
 
 MODULE = 'azure_ad_verify_token.verify'
 APP_ID = 'b74cd13f-8f79-4c98-b748-7789ecb1111d5'
-ISS = 'https://exampletenant.b2clogin.com/90867afa-24e7-40e9-9d27-74bb598zzzzc/v2.0/'
+ISS = (
+    'https://exampletenant.b2clogin.com'
+    '/90867afa-24e7-40e9-9d27-74bb598zzzzc/v2.0/'
+)
 JWKS_URI = (
     'https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/'
     'b2c_1_jhh_sign_in/discovery/v2.0/keys'

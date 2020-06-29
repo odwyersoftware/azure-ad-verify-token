@@ -67,6 +67,8 @@ You should get a JSON response, note down the values for the keys 'issuer' and '
 Now you have those values you can proceed to verify a Azure generated JWT Token.
 
 ```python
+from azure_ad_verify_token import verify_jwt
+
 azure_ad_app_id = 'b74cd13f-8f79-4c98-b748-7789ecb1111d5'
 azure_ad_issuer = 'https://exampletenant.b2clogin.com/0867afa-24e7-40e9-9d27-74bb598zzzzc/v2.0/'
 azure_ad_jwks_uri = 'https://exampletenant.b2clogin.com/exampletenant.onmicrosoft.com/b2c_1_jhh_sign_in/discovery/v2.0/keys'
@@ -90,4 +92,11 @@ print(payload)
  'sub': 'e07bbc53-b812-4572-9edc-4b5d4ac88447',
  'tfp': 'B2C_1_jhh_sign_in',
  'ver': '1.0'}
+```
+
+If something goes wrong, one of the below exceptions will be raised:
+
+```
+azure_ad_verify_token.AzureVerifyTokenError
+azure_ad_verify_token.InvalidAuthorizationToken
 ```
