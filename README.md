@@ -1,20 +1,20 @@
 # azure-ad-verify-token
 Verify JWT issued by Azure Active Directory B2C in Python 🐍.
 
-Validation steps this library makes:
+    Validation steps this library makes:
 
-1. Accepts an Azure AD B2C JWT.
-2. Extracts `kid` from unverified headers.
-3. Finds `kid` within Azure JWKS.
-4. Obtains RSA key from JWK.
-5. Calls `jwt.decode` with nessary parameters, which inturn validates:
+    1. Accepts an Azure AD B2C JWT.
+    2. Extracts `kid` from unverified headers.
+    3. Finds `kid` within Azure JWKS.
+    4. Obtains RSA key from JWK.
+    5. Calls `jwt.decode` with nessary parameters, which inturn validates:
 
-    - Signature
-    - Expiration
-    - Audience
-    - Issuer
-    - Key
-    - Algorithm
+        - Signature
+        - Expiration
+        - Audience
+        - Issuer
+        - Key
+        - Algorithm
 
 ## License
 
