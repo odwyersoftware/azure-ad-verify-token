@@ -99,6 +99,7 @@ If something goes wrong, one of the below exceptions will be raised:
 ```
 # If the token is found to be invalid.
 azure_ad_verify_token.InvalidAuthorizationToken
+
 # Base exception, raised if the checks which call the Azure server recieve an unhappy response.
 azure_ad_verify_token.AzureVerifyTokenError
 ```
