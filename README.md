@@ -1,6 +1,8 @@
 # azure-ad-verify-token
 Verify JWT issued by Azure Active Directory B2C in Python 🐍.
 
+[![Build Status](https://travis-ci.org/ODwyerSoftware/azure-ad-verify-token.svg?branch=master)](https://travis-ci.org/ODwyerSoftware/azure-ad-verify-token) [![PyPI version](https://badge.fury.io/py/sheet2api.svg)](https://pypi.org/project/sheet2api/)
+
     Validation steps this library makes:
 
     1. Accepts an Azure AD B2C JWT.
