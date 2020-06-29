@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/work/.pyenv/versions/azure-ad-verify-token/bin/python",
+    "python.formatting.provider": "black"
+}

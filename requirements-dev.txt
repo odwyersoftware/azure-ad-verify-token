@@ -1,0 +1,13 @@
+-r requirements.txt
+mccabe==0.6.1
+pep8-naming==0.11.1
+flake8==3.8.3
+pytest==5.4.3
+rope==0.17.0
+ipdb==0.13.3
+brunette==0.1.7
+pytest-mock==3.1.1
+requests-mock==1.8.0
+lock-requirements==0.1.1
+tox==3.16.0
+pytest-cov==2.10.0

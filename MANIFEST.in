@@ -1,0 +1,11 @@
+include HISTORY.md
+include README.md
+include LICENSE.md
+include requirements.txt
+
+recursive-include tests *
+recursive-include azure_ad_verify_token *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.md *.rst conf.py Makefile make.bat
