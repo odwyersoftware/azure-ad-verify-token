@@ -36,7 +36,7 @@ pip install azure-ad-verify-token
 
 First you'll need to get your `azure_ad_app_id`, `azure_ad_issuer` and `azure_ad_jwks_uri`. See below steps to obtain these.
 
-1. For app id. Login to Azure Portal, navigation to Azure AD B2C, Click on the Applications section and your app id should be listed.
+1. For app id. Login to [Azure Portal](https://portal.azure.com/), navigation to Azure AD B2C, Click on the Applications section and your app id should be listed.
 
 2. For Issuer and JWKS URI:
 
