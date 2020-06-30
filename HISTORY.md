@@ -4,7 +4,7 @@ Release History
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Corrects required dependency version range.
 
 
 0.1.1 (2020-06-29)
