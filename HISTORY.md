@@ -4,7 +4,7 @@ Release History
 0.1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Allow wider versions of cryptography dep.
 
 
 0.1.2 (2020-06-30)
