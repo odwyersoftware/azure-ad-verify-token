@@ -1,8 +1,8 @@
 Release History
 ===============
 
-0.1.3 (unreleased)
-----------------
+0.1.3 (2021-03-11)
+------------------
 
 - Allow wider versions of cryptography dep.
 
