@@ -1,7 +1,7 @@
 Release History
 ===============
 
-0.2.0 (unreleased)
+0.2.0 (2021-10-19)
 ------------------
 
 - Adds optional arg `verify` to `verify_jwt` function.
