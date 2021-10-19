@@ -79,6 +79,7 @@ payload = verify_jwt(
     valid_audiences=[azure_ad_app_id],
     issuer=azure_ad_issuer,
     jwks_uri=azure_ad_jwks_uri,
+    verify=True,
 )
 
 print(payload)
