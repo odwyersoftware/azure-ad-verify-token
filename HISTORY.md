@@ -4,7 +4,7 @@ Release History
 0.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Widen permitted dependency versions.
 
 
 0.2.0 (2021-10-19)
