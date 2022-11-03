@@ -25,7 +25,7 @@ LICENSE = (
 
 setup(
     name='azure-ad-verify-token',
-    version='0.3.0',
+    version='0.3.1.dev0',
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
     zip_safe=False,
