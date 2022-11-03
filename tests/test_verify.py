@@ -113,6 +113,7 @@ def test_returns_payload_if_token_successfully_verified(
         valid_audiences=[APP_ID],
         issuer=ISS,
         jwks_uri=JWKS_URI,
+        options={},
     )
 
     assert data == {

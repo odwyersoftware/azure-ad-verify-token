@@ -17,7 +17,9 @@ class InvalidAuthorizationToken(AzureVerifyTokenError):
         super().__init__(f'Invalid authorization token: {details}')
 
 
-def verify_jwt(*, token, valid_audiences, jwks_uri, issuer, verify=True):
+def verify_jwt(
+    *, token, valid_audiences, jwks_uri, issuer, verify=True, options=None
+):
     public_key = get_public_key(token=token, jwks_uri=jwks_uri)
     try:
         decoded = jwt.decode(
@@ -27,6 +29,7 @@ def verify_jwt(*, token, valid_audiences, jwks_uri, issuer, verify=True):
             algorithms=['RS256'],
             audience=valid_audiences,
             issuer=issuer,
+            options=options or {},
         )
     except jwt.exceptions.PyJWTError as exc:
         raise InvalidAuthorizationToken(exc.__class__.__name__)
