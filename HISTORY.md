@@ -1,7 +1,7 @@
 Release History
 ===============
 
-0.3.0 (unreleased)
+0.3.0 (2022-11-03)
 ------------------
 
 - Adds optional 'options' param to `verify_jwt` function.
