@@ -18,7 +18,14 @@ class InvalidAuthorizationToken(AzureVerifyTokenError):
 
 
 def verify_jwt(
-    *, token, valid_audiences, jwks_uri, issuer, verify=True, options=None
+    *,
+    token,
+    valid_audiences,
+    jwks_uri,
+    issuer,
+    verify=True,
+    options=None,
+    **kwargs,
 ):
     public_key = get_public_key(token=token, jwks_uri=jwks_uri)
     try:
@@ -30,6 +37,7 @@ def verify_jwt(
             audience=valid_audiences,
             issuer=issuer,
             options=options or {},
+            **kwargs,
         )
     except jwt.exceptions.PyJWTError as exc:
         raise InvalidAuthorizationToken(exc.__class__.__name__)
