@@ -1,7 +1,7 @@
 Release History
 ===============
 
-0.4.0 (unreleased)
+0.4.0 (2022-12-29)
 ------------------
 
 - Adds optional kwargs to `verify_jwt` function.
